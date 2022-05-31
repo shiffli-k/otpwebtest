@@ -52,7 +52,7 @@
                     signal: ac.signal
                 }).then(otp => {
                     input.value = otp.code;
-                    alert("Otp Fetched", otp.code, input.value);
+                    alert("Otp Fetched", otp.code);
                     // if (form) form.submit();
                 }).catch(err => {
                     console.log(err);
