@@ -17,7 +17,7 @@
         Sample OTP Page
     </h1>
     <div>
-        <pre><code>@domain #otp</code></pre>
+        <pre><code>@shiffli-k.github.io #112233</code></pre>
     </div>
     <div>
         <form action="/post" method="post">
@@ -52,7 +52,7 @@
                     signal: ac.signal
                 }).then(otp => {
                     input.value = otp.code;
-                    alert("Otp Fetched", otp.code);
+                    alert("Otp Fetched", otp.code, input.value);
                     // if (form) form.submit();
                 }).catch(err => {
                     console.log(err);
